@@ -1,0 +1,1642 @@
+.celoProfTrenera, .celaProfKlijentaDiv{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    background:#6c7dc285;
+    border-radius: 20px;
+    /* background:rgba(190, 186, 186, 0.5); */
+}
+
+button{
+    background-color: #010b33b0;
+}
+
+.divKrediti{
+    display: flex;
+    flex-direction: row;
+}
+
+.dugmeIsplati, .buttonBio{
+    max-height: 50px;
+    max-width: 150px;
+    font-size: small;
+    
+}
+
+
+
+.labPrezime{
+    margin-left: 5px;
+}
+
+.divMeni{
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.divCrtajObjave, .divPaketi{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    
+}
+
+.divPaketi{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.divCrtajObjave{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.divObjave, .divPaketGlavni{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 3px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding: 15px;
+}
+
+.divObjave{
+    border: 1px solid black;
+    background: rgb(249, 246, 240, 0.5);
+    color: black;
+    padding: 0.6%;
+    border: 3px solid #344899c9;
+}
+
+.objaveTrenera{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #3757d6cc;
+}
+
+
+
+.divPaketGlavni{
+    align-items: flex-start;
+    display: flex;
+    border: 3px solid #344899c9;
+    margin: 10px 10px 10px 10px;
+    flex-direction: column;
+    position: relative; 
+    max-width: 50%;
+    width: 30%;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-image: url("../assets/pozadina1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.labelPrikVise{
+    font-style: italic;
+    text-decoration:underline;
+    color: rgb(186, 61, 61);
+    text-decoration-color: rgb(186, 61, 61);
+    transition: 1;
+}
+
+
+
+.btnDugmePretplatiSe, .buttonObrisi{
+    align-items: center;
+    border-radius: 15px;
+    
+}
+
+.labelPrikVise:hover{
+    font-size:103%;
+}
+
+.labelPrikVise, .labCena{
+    margin-left: 3px;
+}
+
+.labelaPaketIme{
+
+    font-size: 130%;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.divIme{
+    align-self: center;
+}
+
+
+.divDonji{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divCenaTrajanje{
+    display: flex;
+    flex-direction: column;
+}
+
+.divOpis{
+    width: 95%;
+    border: 1px dotted black;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.divGlPrik{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.labelaObjave, .labelaPaketi, .labelaInfo{
+    font-size: 150%;
+    transition: 0.7s;
+    cursor: pointer;
+    
+}
+
+.labelaObjave:hover, .labelaPaketi:hover, .labelaInfo:hover{
+    font-size: 170%;
+    background-color: rgba(47, 210, 82, 0.69);
+    border-radius: 15px;
+    padding: 0.3%;
+}
+
+
+
+input{
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid  black;
+    outline: 0;
+    font-size: 1.3rem;
+    color: rgb(29, 42, 46);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    
+ 
+}
+
+.divTrajanje{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.labTrajanje{
+    margin-right: 10px;
+}
+
+.selectTrajanje, .selectRegistracijaPol{
+    font-family: inherit;
+    border: 0; 
+    border-bottom: 2px solid  black;
+    background: transparent;
+    
+}
+
+.divOpisDod{
+    width: 100%;
+}
+
+.inputOpis{
+    width: 100%;
+}
+
+
+.divDodajPaket, .divDodajObjavu{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin-top: 1%;
+    margin-right: 4%;
+}
+
+.divPrikazMenija{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dodajPaketBtnDiv , .dodajObjavuBtnDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+
+
+.dodajObjavuBtnDiv{
+    justify-content: space-around;
+}
+.buttonDodPaketPotvrdi, .buttonDodPaketOtkazi, .dugmePotvrdi , .dugmeOtkazi, .dugmeObrisi{
+    width: 20%;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #9b9b9b; 
+    background: #344899c9;
+    box-shadow: 0 2px #8a9de9cc;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: wheat;
+    
+
+}
+
+.dugmeObrisi{
+    margin-bottom: 5px;
+    width: 80%;
+    font-size: medium;
+    background-color: #344899c9;
+    box-shadow: 0 2px #8a9de9cc;
+    color: wheat;
+}
+
+.opisSlika{
+    margin-bottom: 4%;
+    color: #000000;
+}
+
+.buttonDodPaketPotvrdi:hover , .buttonDodPaketOtkazi:hover, .dugmePotvrdi:hover , .dugmeOtkazi:hover, .dugmeObrisi:hover, .buttonObrisi:hover{
+    transform: translateY(2px);
+}
+
+.buttonDodPaketPotvrdi:active , .buttonDodPaketOtkazi:active,.dugmePotvrdi:active , .dugmeOtkazi:active ,.dugmeObrisi:active,.buttonObrisi:active {
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.buttonDodPaket, .DugmeDodObj{
+    width: 50%;
+    border-radius: 30px;
+    border: 2px solid #010b33b0;
+    background: #344899c9;
+    color: wheat;
+    box-shadow: 0 4px #9a8dfc;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.buttonDodPaket:hover, .DugmeDodObj:hover{
+    transform: translateY(2px);
+}
+
+.buttonDodPaket:active, .DugmeDodObj:active {
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.labUnesiSliku{
+    font-size: large;
+    font-style: italic;
+}
+
+.divIme{
+    display: flex;
+    flex-direction: row;
+}
+
+.labelaPrezime{
+    margin-left: 10%;
+}
+
+.divEmail, .divDrzava, .divGrad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divIme, .divEmail, .divDrzava, .divGrad, .divPol, .divPassword, .divDatum{
+    margin-bottom: 3%;
+}
+
+.divPassword{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.divInfo{
+    margin-top: 2%;
+    width: 40%;
+    border: 3px solid #344899c9;
+    padding: 2%;
+    border-radius: 15%;
+    margin-bottom: 3%;
+    font-size: large;
+    background-color: rgb(249, 246, 240, 0.5);
+    /*background-image: url("../assets/pozadina1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    
+}
+
+.buttonEmail, .buttonDrzava, .buttonGrad, .buttonPass{
+    width: 30%;
+
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #9b9b9b; 
+    background: #344899c9;
+    box-shadow: 0 2px #8a9de9cc;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: wheat;
+    font-size: small;
+}
+
+.buttonEmail:hover, .buttonDrzava:hover, .buttonGrad:hover, .buttonPass:hover{
+    transform: translateY(2px);
+}
+
+.buttonEmail:active, .buttonDrzava:active, .buttonGrad:active, .buttonPass:active{
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.divInfoGlavni{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.divIzmeniEmailGlavni , .divIzmeniDrzavuGlavni, .divIzmeniGradGlavni, .divIzmeniPassGlavni{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #344899c9;
+    padding: 2%;
+    border-radius: 15%;
+    margin-bottom: 3%;
+    background: rgb(249, 246, 240, 0.5);
+    align-items: center;
+}
+
+.divIzmePass, .divIzmeDrzavu, .divIzmeGrad,.divIzmeEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divIzmePassDugmici, .divIzmeDrzavuDugmici, .divIzmeGradDugmici, .divIzmeEmailDugmici, .divIzmeBioDugmici,.divDodKrediteDugmici{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.buttonIzmPassPotvrdi, .buttonIzmPassPonisti,.buttonIzmDrzavuPotvrdi, .buttonIzmDrzavuPonisti,.buttonIzmGradPotvrdi,.buttonIzmEmailPotvrdi, .buttonIzmEmailPonisti,.buttonIzmBioPonisti,.buttonDodKredPotvrdi,.buttonDodKredPonisti{
+    width: 30%;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #9b9b9b; 
+    background: #344899c9;
+    box-shadow: 0 2px #8a9de9cc;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: wheat;
+}
+
+.buttonIzmPassPotvrdi:hover , .buttonIzmPassPonisti:hover,.buttonIzmDrzavuPotvrdi:hover , .buttonIzmDrzavuPonisti:hover,.buttonIzmGradPotvrdi:hover,.buttonIzmEmailPotvrdi:hover, .buttonIzmEmailPonisti:hover,.buttonIzmBioPonisti:hover,.buttonDodKredPotvrdi:hover,.buttonDodKredPonisti:hover{
+    transform: translateY(2px);
+}
+
+.buttonIzmPassPotvrdi:active , .buttonIzmPassPonisti:active,.buttonIzmDrzavuPotvrdi:active , .buttonIzmDrzavuPonisti:active,.buttonIzmGradPotvrdi:active,.buttonIzmEmailPotvrdi:active, .buttonIzmEmailPonisti:active,.buttonIzmBioPonisti:active,.buttonDodKredPotvrdi:active,.buttonDodKredPonisti:active{    
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.usernameCreditDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.divKrediti{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dugmeIsplati,.buttonBio{
+    width: 55%;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #010b33b0; 
+    background: #344899c9;
+    box-shadow: 0 3px #8da1f3b0;
+    cursor: pointer;
+    outline: none;
+    color: wheat;
+    align-items: center;
+}
+
+.dugmeIsplati:hover,.buttonBio:hover{
+    transform: translateY(2px);
+}
+
+.dugmeIsplati:active,.buttonBio:active{    
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.divUsername{
+    font-size: 150%;
+    font-weight: bolder;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    padding: 5px;
+    background: #010b33b0;
+    color: wheat;
+}
+
+.divBiografija{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+
+
+.divIsplata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    align-self: flex-end;
+}
+
+
+.informacijeTreenra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------------KLIJENT---------------------------------------*/
+
+
+.informacijeKlijenta{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.divIsplata{
+    padding: 1%;
+}
+
+.divNemaPaketa{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    font-size: large;
+    padding: 2%;
+    font-style: italic;
+    font-size: large;
+}
+
+/*--------------------------------POCETNA-----------------------------------*/
+
+
+.objaveDivPocetna{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    background-color: rgb(160, 160, 160, 0);
+    border-top: 3px solid #7689d7b0;
+    border-bottom: 3px solid #7689d7b0;
+    /*border-right: 1px solid rgba(47, 210, 82, 0.3);
+    border-left: 1px solid rgba(47, 210, 82, 0.3);*/
+    border-radius: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.divObjavePocetna{
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 2%;
+    background-color: rgba(118, 137, 215, 0.6);
+    margin-bottom: 3%;
+    width: 60%;
+    height: 70%;
+    justify-content: space-between;
+    box-shadow: 7px 0px 8px 5px #454444;
+}
+
+.objaveTreneraPocetna{
+    width: 100%;
+    height: 70%;
+    border: 1px solid black;
+}
+
+
+
+.inputSearch{
+    margin-bottom: 1%;
+    background-color: #6c7dc285;
+}
+
+.inputSearch::placeholder{
+    color: black;
+}
+
+.lblUsernamePocetna{
+    font-size: 120%;
+    font-style: italic;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.lblUsernamePocetna:hover{
+    font-size: 125%;
+}
+
+.opisSlikaPocetna{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.objavaNaPocetnojLikelbl{
+    order: -1;
+}
+
+.likeDiv{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prikazGlavni{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.Search{
+    margin-right: 3%;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+.ulSearch li{
+    border: 1px solid black;
+    text-align: center;
+    padding: 1%;
+    background-color: rgba(118, 137, 215, 0.4);
+    border-radius: 10%;
+    /*flex-shrink: 1;*/
+    
+    /* position:absolute; */
+}
+
+
+
+.Prikaz{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown-menu {
+    padding-left: 5%;
+    border: 1px solid black;
+    background-color: #7689d7b0;;
+}
+
+/*-------------FORUM------------*/
+
+
+
+.likeDiv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.objavaNaForumuDiv{
+    border-radius: 15px;
+    box-shadow: 7px 0px 8px 5px #b1acf0;
+    width: 90%;
+    padding: 2px;
+    background-color: rgba(100, 98, 98, 0.6);
+}
+
+.objaveDiv{
+    border-top: 3px solid #7689d7b0;
+    border-bottom: 3px solid #7689d7b0;
+    /* background-color: rgba(118, 137, 215, 0.4); */
+    width: 85%;
+    padding-top: 2%;
+    border-radius: 1%;
+    margin-bottom: 1%;
+}
+
+.naslovDiv{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.851);
+    padding: 4px 4px 4px 8px;
+    font-style: italic;
+    border-radius: 7px 7px 3px 3px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.688);
+    border-radius: 3px 3px 7px 7px;
+}
+
+.sadrzajDiv{
+    padding: 4px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.688);
+    border-radius: 6px;
+}
+
+.objavaNaForumuSadLbl{
+    padding: 2px;
+}
+
+.objavaNaForumuUsrLbl{
+    font-size: small;
+    cursor: pointer;
+}
+
+.objavaNaForumuDateLbl{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.objavaNaForumuNaslovLbl{
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.brisiTemuBtn{
+    width:fit-content;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #9b9b9b; 
+    background-color: #010b33b0;
+    box-shadow: 0 4px #9b9b9b;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: black;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.brisiOdgovorBtn{
+    width: 12%;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #06ba3c; 
+    background: #3757d6cc;
+    box-shadow: 0 2px #8a9de9cc;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: wheat;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.potvrdiBtn, .otkaziBtn, .brisiTemuBtn{
+    width: fit-content;
+    padding: 3%;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #06ba3c; 
+    background: #3757d6cc;
+    box-shadow: 0 2px #8a9de9cc;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: wheat;
+    justify-content: space-between;
+    
+}
+
+.potvrdiBtn:hover, .otkaziBtn:hover, .brisiTemuBtn:hover, .brisiOdgovorBtn:hover, .dodajTemuBtn:hover{
+    transform: translateY(2px);
+}
+
+.potvrdiBtn:active, .otkaziBtn:active , .brisiTemuBtn:active, .brisiOdgovorBtn:active, .dodajTemuBtn:active {
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.dugmiciii{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* .labelBio{
+    display: inline-block;
+    border: 0.2px solid black;
+    width: fit-content;
+    max-width: 10%;
+    word-wrap: break-word;
+
+} */
+.labelBio{
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.divBiografija1{
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    border: 2px solid #344899c9;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: rgb(249, 246, 240, 0.5);
+}
+
+.dodajTemuBtn{
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #9b9b9b;
+    /* background: rgb(102, 101, 101, 0.7); */
+    background-color: #7689d7b0;
+    color: black;
+    /* box-shadow: 0 4px #9b9b9b; */
+    cursor: pointer;
+    text-align: center;
+}
+
+.dodajTemuDiv{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.dodajTemuDiv2{
+    background-color: rgba(190, 186, 186, 0.5);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.odgovorNaObjavuDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background: rgba(143, 143, 143, 0.7);
+    box-shadow: 7px 0px 8px 5px #454444;*/
+    padding: 3px;
+
+}
+
+.odgovoriDiv{
+    margin:0px;
+    padding-right: 5px;
+}
+
+.odgovorDiv{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: rgba(100, 98, 98, 0.6);
+}
+
+.infoDiv1{
+    padding: 2px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.688);
+    border-radius: 3px 3px 7px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.naslovDiv1{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.851);
+    padding: 4px 4px 4px 8px;
+    font-style: italic;
+    border-radius: 7px 7px 3px 3px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.likeDiv3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.objavaNaForumuDateLbl1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.usernameDiv1, .titleDiv1, .brisiDiv1{
+    width:33%;
+}
+
+.titleDiv1{
+    padding-left: 10%;
+}
+
+.brisiDiv1{
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.lblChat{
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.labelaTrener{
+    font-size: large;
+    margin-top:2%;
+    margin-bottom: 2%;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.labelaTrener:hover{
+    font-size: larger;
+    background-color: rgba(47, 210, 82, 0.69);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btnPosaljiPoruku{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    font-size: large;
+    border-radius: 30px;
+    /* background: rgba(77, 76, 76, 0.645); */
+    /* box-shadow: 0 4px #8a8989; */
+    background: rgba(1, 11, 51, 0.69);
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    /* color: black; */
+    color: wheat;
+    justify-content: space-between;
+    margin-left:8%;
+    padding: 3% 5% 0% 5%;
+}
+
+
+.btnPosaljiPoruku:hover{
+    transform: translateY(2px);
+}
+
+.btnPosaljiPoruku:active{
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.chatime{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    /* background-color: rgb(120, 187, 241); */
+    background-color: #7689d7;
+    box-shadow: 0px 0px 12px 7px rgb(62, 62, 62);
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    margin-top: 2%;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+
+
+.levo {
+    display: inline-block;
+    border: 0.4px solid black;
+    width: fit-content;
+    max-width: 40%;
+    word-wrap: break-word;
+    border-radius: 12px;
+    padding: 5px;
+    /* background-color: rgba(120, 116, 116, 0.645); */
+    background-color: rgb(135 244 154 / 65%);
+}
+
+.divPodrskaGlavni{
+    padding: 5% 2% 5% 2%;
+
+}
+
+.divUputstvo{
+    padding: 1% 2% 2% 2%;
+    box-shadow: 0px 0px 12px 7px rgb(62, 62, 62);
+    box-shadow: 0px 0px 12px 7px rgba(52, 72, 153, 0.4);
+    background-color: rgb(249, 246, 240, 0.6);
+    border: 3px solid #344899c9;
+    /*background-image: url("../assets/svetla.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgba(118, 137, 215,0.6); */
+    background-color: rgb(249, 246, 240, 0.8);
+    border-radius: 20px;
+
+}
+
+.divKontakt{
+    padding: 1% 2% 2% 2%;
+    box-shadow: 0px 0px 12px 7px rgba(52, 72, 153, 0.4);
+    background-color: rgb(249, 246, 240, 0.8);
+    border: 3px solid #344899c9;
+    /*background-image: url("../assets/svetla.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+
+.labNaslovKontakt, .labUputstvo{
+    font-weight: bold;
+}
+
+.labelMailN, .labMailN, .labNeprijavljen, .labPrijavljen{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.labPrijavljen{
+text-align: center;
+}
+
+
+/* ----------------------ADMIN-------------------*/
+
+.buttonBan{
+    max-height: 70px;
+    max-width: 200px;
+    font-size: larger;
+    margin: 2%;
+    box-shadow: 0 4px rgb(103, 101, 101);
+    border-radius: 5px;
+
+}
+
+.buttonUnban, .buttonIsplati{
+    width: fit-content;
+    font-size: medium;
+    padding: 5%;
+    /* background: rgba(65, 65, 65, 0.7); */
+    /* box-shadow: 0 4px #6b6a6a;   */
+    background: rgba(1, 11, 51, 0.69);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+
+
+.buttonPotvrdi{
+    width: fit-content;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid #9b9b9b; 
+    /* background: rgb(102, 101, 101, 0.7); */
+    background: #344899c9;
+    box-shadow: 0 4px #9b9b9b;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: black;
+    margin-bottom:2%;
+}
+
+.buttonUplati, .buttonOdbij{
+    width: 38%;
+    font-size: medium;
+    border-radius: 20px;
+    border: 1px solid #9b9b9b; 
+    /* background: rgb(102, 101, 101, 0.7); */
+    /* box-shadow: 0 4px #9b9b9b; */
+    background: rgba(1, 11, 51, 0.69);
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    /* color: black; */
+    color:white;
+    margin-bottom:2%;
+}
+.divBan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divSredina{
+    display: flex;
+    margin: 1%;
+}
+
+.divGlBan1{
+    border: 2px solid black;
+    background-color: rgba(111, 224, 135, 0.8);
+    padding: 2%;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1%;
+}
+
+.divDesnoButt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.lblBanovaniKorisnici{
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.KorisniciDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.divGlBan, .divGlZahTR{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    margin: 70%;
+    align-items: center;
+    margin: 2%;
+    margin-bottom: 4%;
+    border: 1px solid black;
+    box-shadow: 1px 2px #000000;
+    border-radius: 15px;
+    padding: 1%;
+    /* background: linear-gradient(0deg, rgba(173,173,173,1) 0%, rgba(56,65,65,1) 100%); */
+    /* background-image: url("../assets/svetla.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(26, 19, 217, 0.479) 100%);
+    border: 4px solid #344899c9;
+    justify-content: space-between;
+}
+
+
+
+.KorisniciDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.divZahtevi{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.divGlavni{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.divGlZahKL{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2%;
+    margin-bottom: 4%;
+    border: 1px solid black;
+    box-shadow: 1px 2px #000000;
+    border-radius: 15px;
+    padding: 1%;
+    /* background: linear-gradient(0deg, rgba(173,173,173,1) 0%, rgba(56,65,65,1) 100%); */
+    /* background-image: url("../assets/svetla.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(26, 19, 217, 0.479) 100%);
+    border: 4px solid #344899c9;
+    justify-content: space-between;
+}
+
+.divLevo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px;
+    justify-content: space-evenly;
+}
+
+.divDesno{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 1%;
+    padding: 1%;
+}
+
+.labUsername{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.labRazlog, .labBrRac, .labKol{
+    border: 0.2px dotted black;
+    border-radius:5px;
+    margin-top:2%;
+    padding: 1%;
+}
+
+.lblBio{
+    font-size: large;
+    font-style: italic;
+}
+
+
+
+
+
+.dobrodosliDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.dobrodosliLab{
+    display: flex;
+    flex-shrink: 1;
+    font-size: 500%;
+    color: #000000;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    letter-spacing: 9px;
+
+}
+
+.dobrodosliImg{
+    display: flex;
+    flex-shrink: 2;
+    width: 90%;
+}
+
+.buttonDodajOdg{
+    width: 30%;
+    margin-bottom: 1%;
+    background: #7689d7b0;
+    box-shadow: 0 2px #8a9de9cc;
+}
+
+.divGlavniPretplate{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.divGlavniPretplate2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.divPretplata{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 2%;
+    /* background-image: url("../assets/svetla.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(26, 19, 217, 0.479) 100%);
+    border: 4px solid #344899c9;
+    margin-bottom: 2%;
+}
+
+.divIzmeniBioGlavni{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.inputNoviBio{
+    width: 100%;
+    overflow-y: auto;
+    height: 100px;
+    resize: none;
+    background-color: rgb(249, 246, 240, 0.5);
+    border: 3px solid #344899c9;
+}
+
+
+
+@media screen and (max-width:850px) {
+    
+   .dobrodosliLab{
+        font-size: 450%;
+    }
+
+    .dobrodosliImg{
+        
+        width: 80%;
+    }
+
+    .divPrijava{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .divInfo{
+        font-size: small;
+    }
+    
+    .dobrodosliLab{
+         font-size: 400%;
+     }
+
+    .divRegistracijaUsernameEmail, .divRegistracijaPasswordPlusProvera, .divRegistracijaImePrezime, .divRegistracijaGradDrzava, .divRegistracijaPolDatum{
+        flex-wrap: wrap;
+        
+    }
+
+    .divRegistracijaUsername, .divRegistracijaEmail, .divRegistracijaPassword, .divRegistracijaPasswordProvera, .divRegistracijaIme,
+        .divRegistracijaPrezime, .divRegistracijaGrad, .divRegistracijaDrzava, .divRegistracijaZanimanje, .divRegistracijaBiografija{
+          align-items: center;
+    }
+ }
+
+ @media screen and (max-width:650px) {
+    
+    .dobrodosliLab{
+         font-size: 350%;
+         letter-spacing: 10px;
+     }
+
+     .dobrodosliImg{
+        
+        width: 75%;
+    }
+
+    .dobrodosliDiv{
+        
+        padding-top: 12%;
+    }
+
+    .divPrijava{
+        width: 35%;
+    }
+ }
+
+ @media screen and (max-width:600px) {
+    
+    .dobrodosliLab{
+         font-size: 300%;
+         
+     }
+
+     .dobrodosliDiv{
+        
+        padding-top: 15%;
+    }
+ }
+
+ @media screen and (max-width:540px) {
+    
+    .dobrodosliLab{
+         font-size: 250%;
+         letter-spacing: 7px;
+     }
+
+     .dobrodosliDiv{
+        
+        padding-top: 20%;
+    }
+ }
+
+ @media screen and (max-width:450px) {
+    
+    .dobrodosliLab{
+         font-size: 200%;
+     }
+
+     .dobrodosliImg{
+        
+        width: 70%;
+    }
+
+    .dobrodosliDiv{
+        
+        padding-top: 25%;
+    }
+
+    .divPrijava{
+        width: 45%;
+    }
+
+    
+ }
+
+
+ @media screen and (max-width:380px) {
+    
+    .dobrodosliLab{
+         font-size: 150%;
+         letter-spacing: 6px;
+     }
+
+     .dobrodosliImg{
+        
+        width: 65%;
+    }
+    .dobrodosliDiv{
+        
+        padding-top: 30%;
+    }
+
+    .divPrijava{
+        width: 50%;
+    }
+ }
+
+ @media screen and (max-width:290px) {
+    
+    .dobrodosliLab{
+         font-size: 100%;
+         letter-spacing: 5px;
+     }
+
+     .dobrodosliImg{
+        
+        width: 60%;
+    }
+    .dobrodosliDiv{
+        
+        padding-top: 35%;
+    }
+
+    .divPrijava{
+        width: 65%;
+    }
+ }
+
+ @media screen and (max-width:1200px) {
+    
+    .inputSearch{
+        width: 95%;
+        font-size: medium;
+    }
+ }
+
+ @media screen and (max-width:1000px) {
+    
+    .inputSearch{
+        
+        font-size: small;
+    }
+ }
+
+ @media screen and (max-width:900) {
+    
+    .GlavniPrikaz{
+        flex-wrap: wrap-reverse;
+    }
+ }
+
+ .divRB{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .divTip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+ }
+
+ .divUzivo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+    width: 30%;
+    justify-content: center;
+ }
+
+ .tipRB{
+    margin-left: 2px;
+    width: 16px;
+    width: 16px;
+ }
+
+
+ .uzivoCB{
+    margin-left: 2%;
+    width: 16px;
+    height: 16px;
+ }
+
+ .uzivoCL{
+    background-color: aqua;
+ }
+
+ .divUzivo2{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    font-size: x-large;
+    font-weight: bold;
+    height: 20%;
+ }
+
+.labPocetna{
+    display: flex;
+    flex-shrink: 1;
+    font-size: 200%;
+    color: #000000;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    letter-spacing: 9px;
+}
+
+.divDugmePocetna{
+    display: flex;
+    flex-direction: row;
+}
+
+.divDugmePocetna{
+    width: 60%;
+    justify-content: space-around;
+}
+
+.dugmePocetna{
+    width: 40%;
+    justify-content: center;
+    background-color: rgba(127, 149, 233, 1);
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.dodajTemuTxtDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.odgovoriDiv2{
+    border:2px dotted black;
+    background-color:  rgba(250, 250, 250, 0.7);
+    box-shadow:  7px 0px 8px 5px #454444;
+}
+
+.sortSel{
+    background-color: #7689d7b0;
+    color: rgb(67, 64, 64);
+}
+
+/* .sortSel:hover{
+    background-color: #3757d6cc;
+    color: rgb(245, 222, 179);
+} */
+
+.oznaciLabelu{
+    background-color: rgba(47, 210, 82, 0.69);
+    border-radius:   15px;
+    padding:  0.3% 0.3% 0.3% 0.3%;
+    
+}
+
+
+
+
+

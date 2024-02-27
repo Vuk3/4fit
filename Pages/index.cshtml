@@ -1,0 +1,36 @@
+﻿@page
+@using _4fit.Pages
+@model indexModel
+@{   
+    Layout = "_Layout";
+    ViewData["Title"] = "4fit";
+}
+
+
+@section OpcijeHeder{
+    
+ 
+<div class="collapse navbar-collapse udalji" id="navbarResponsive">
+    <ul class="navbar-nav marginaLevo">
+        <li class="nav-item active crtajPocetnu pointer"><a class="nav-link selected aPocetna">Pocetna strana</a></li>
+        <li class="nav-item crtajForum pointer"><a class="nav-link aForum">Forum</a></li>
+        <li class="nav-item crtajPodrsku pointer"><a class="nav-link aONama">Podrska</a></li>
+        
+    </ul>
+
+    <!-- <button class="btnHederPrijaviSe">Prijavi se plssss</button> -->
+
+    <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item btnHederPrijaviSe pointer"><a class="nav-link">Prijavi se</a></li>
+    <li class="nav-item btnHederRegistrujSe pointer"><a class="nav-link">Registruj se</a></li>
+
+</ul>
+</div>
+
+}
+
+@section Script{
+        @* <script src="source/proveraIndex.js" type="module"></script> *@
+        <script src="source/main.js" type="module"></script>
+}
+

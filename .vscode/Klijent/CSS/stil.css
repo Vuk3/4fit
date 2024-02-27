@@ -1,0 +1,39 @@
+.GlavniKontejner{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    min-height: 900px;
+    background-image: url("../Slike/teretana.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    margin: 0px;
+}
+
+.divRegistracija{
+    display: flex;
+    flex-direction: column;
+}
+
+.divRegistracijaTrenerKlijent{
+    display: flex;
+    flex-direction: row;
+} 
+
+.divRegistracijaTrener, .divRegistracijaKlijent, .divRegistracijaIme, .divRegistracijaPrezime, .divRegistracijaGrad, .divRegistracijaDrzava, .divRegistracijaEmail, .divRegistracijaUsername, .divRegistracijaPassword, .divRegistracijaDatum, .divRegistracijaBiografija, .divRegistracijaZanimanje, .divRegistracijaPasswordProvera, .divRegistracijaPol, .divPrijavaPassword, .divPrijavaUsername{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRegistracijaZanimanje, .inputRegistracijaBiografija{
+    resize: none;
+    height: 100px;
+}
+
+.imgRegistracijaTrener, .imgRegistracijaKlijent{
+    width: 40px;
+    height: 40px;
+}

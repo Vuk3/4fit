@@ -1,0 +1,39 @@
+﻿@page
+@using _4fit.Pages
+@model prijavljenModel
+@{   
+    Layout = "_Layout";
+    ViewData["Title"] = "4fit";
+}
+
+@section OpcijeHeder{
+    
+
+<div class="collapse navbar-collapse udalji" id="navbarResponsive">
+    <ul class="navbar-nav marginaLevo">
+        <li class="nav-item active crtajPocetnuPrijavljen pointer"><a class="nav-link selected aPocetna">Pocetna strana</a></li>
+        <li class="nav-item crtajForum pointer"><a class="nav-link aForum">Forum</a></li>
+        <li class="nav-item crtajChat pointer"><a class="nav-link aChat">Chat</a></li>
+        <li class="nav-item crtajPretplate pointer"><a class="nav-link aPretplate">Pretplate</a></li>
+        <li class="nav-item crtajPodrsku pointer"><a class="nav-link aONama">Podrska</a></li>
+
+    </ul>
+
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item dropdown pointer"><a class="dropdown-toggle nav-link" data-toggle="dropdown">Profil<span class="caret"></span></a>
+          <ul class="dropdown-menu bezGornjeMargine">
+            <li class="prikaziProfil pointer"><a>Prikazi profil</a></li>
+            <form action="/Auth/LogOut" method="post">
+              <li class="odjaviSe pointer"><button type="submit" class="buttonButton" style="color: #212529; text-align: left; background-color: rgba(0,0,0,0); border:0px; padding:0;">Odjavi se</button></li>
+            </form>
+          </ul>
+        </li>
+  </ul>
+</div>
+}
+
+@section Script{
+        @* <script src="source/proveraPrijavljen.js" type="module"></script> *@
+        <script src="source/main.js" type="module"></script>
+}

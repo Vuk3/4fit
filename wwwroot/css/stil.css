@@ -1,0 +1,220 @@
+.GlavniKontejner{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    min-height: 900px;
+    background-image: url("../assets/mutnaBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background: rgb(173,173,173);
+    background: linear-gradient(0deg, rgba(173,173,173,1) 0%, rgba(56,65,65,1) 100%);*/
+}
+
+body{
+    margin: 0px;
+}
+
+/* div{
+    display: flex;
+} */
+
+.Heder{
+    height: 115px;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+.error {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0% { left: -5px; }
+    100% { right: -5px; }
+}
+
+.divRegistracija{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.divRegistracijaTrenerKlijent{
+    display: flex;
+    flex-direction: row;
+} 
+
+.divRegistracijaTrener, .divRegistracijaKlijent, .divRegistracijaIme, .divRegistracijaPrezime, .divRegistracijaGrad, .divRegistracijaDrzava, .divRegistracijaEmail, .divRegistracijaUsername, .divRegistracijaPassword, .divRegistracijaDatum, .divRegistracijaBiografija, .divRegistracijaZanimanje, .divRegistracijaPasswordProvera, .divRegistracijaPol, .divPrijavaPassword, .divPrijavaUsername{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRegistracijaZanimanje, .inputRegistracijaBiografija{
+    resize: none;
+    height: 100px;
+}
+
+.imgRegistracijaTrener, .imgRegistracijaKlijent{
+    width: 40px;
+    height: 40px;
+}
+
+.celaObjavaNaForumuDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.objavaNaForumuDiv{
+    flex-direction: column;
+    border: 3px solid black;
+    margin: 10px;
+    width: 98%;
+    
+}
+
+.odgovorDiv{
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 10px;
+    width: 98%;
+}
+
+.naslovDiv, .sadrzajDiv, .infoDiv{
+    border: 1px solid black;
+    margin: 3px;
+    background-color: aliceblue;
+}
+
+.infoDiv{
+    flex-direction: row;
+}
+
+.objavaNaForumuSadLbl{
+    display: flex;
+    resize: none;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.imgLike, .imgKom{
+    height: 25px;
+    width: 100px;
+    order: -1;
+    cursor: pointer;
+}
+
+.imgLike2{
+    height: 22px;
+    width: 25px;
+}
+
+.likeDiv, .commDiv{
+    flex-direction: column;
+}
+
+.odgovorNaObjavuDiv{
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.selected{
+    background-color: #7689d7b0;
+    border-radius: 20px;
+}
+
+.container{
+    font-style: italic;
+}
+
+
+/* .marginaLevo{
+    margin-left: 10%;
+} */
+
+.udalji{
+    justify-content: space-between;
+}
+
+.divSlika{
+    /* min-width: 500px;
+    min-height: 500px; */
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.divIzmePass{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    min-width: 300px;
+}
+
+.inputStariPass, .inputNoviPass1, .inputNoviPass2{
+    margin-left: 10px;
+}
+
+[class^="slika"]{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+.divDonji{
+    display: flex;
+    flex-direction: row;
+}
+
+.pagUl{
+    order: 1;
+}
+
+.Prikaz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objaveDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.odgovoriDiv{
+    width: 100%;
+}
+
+.objaveTrenera{
+    width: 200px;
+    height: 200px;
+}
+
+.divObjave, .divObjavePocetna{
+    display: flex;
+    flex-direction: column;
+}
+
+.opisSlika{
+    color:wheat;
+}
+
+.objaveTreneraPocetna{
+    width: 400px;
+    height: 700px;
+}

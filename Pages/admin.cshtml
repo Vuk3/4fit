@@ -1,0 +1,42 @@
+﻿@page
+@using _4fit.Pages
+@model adminModel
+@{   
+    Layout = "_Layout";
+    ViewData["Title"] = "4fit";
+}
+
+
+@section OpcijeHeder{
+
+<div class="collapse navbar-collapse udalji" id="navbarResponsive">
+    <ul class="navbar-nav marginaLevo">
+        <li class="nav-item active crtajPocetnuAdmin pointer"><a class="nav-link selected aPocetna">Pocetna strana</a></li>
+        <li class="nav-item crtajForum pointer"><a class="nav-link aForum">Forum</a></li>
+        <li class="nav-item crtajKorisnikeAdmin pointer"><a class="nav-link aKorisnici">Korisnici</a></li>
+        <li class="nav-item crtajZahteveAdmin pointer"><a class="nav-link aZahtevi">Zahtevi</a></li>
+        
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+    <form action="/Auth/LogOut" method="post">
+        <li class="nav-item dropdown pointer odjaviSe"><button type="submit" class="nav-link" style="background-color: rgba(0,0,0,0); border:0px;" >Odjavi se</button></li>
+    </form>
+
+
+
+
+</ul>
+
+    
+</div>
+
+        
+}
+
+@section Script{
+        @* <script src="source/proveraAdmin.js" type="module"></script> *@
+        <script src="source/mainAdmin.js" type="module"></script>
+
+}

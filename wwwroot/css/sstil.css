@@ -1,0 +1,139 @@
+
+
+.divPrijava, .divRegistracija {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    border-style: solid;
+    border-width: thick;   
+    /* background:#5e5b5b;
+    background:rgba(190, 186, 186, 0.5);   */
+    background-color: #7689d7b0;
+    border-color: #2c3c7cb0;
+}
+
+.divPrijava{
+    width: 25%;
+}
+
+.divPrijavaNaslov, .divRegistracijaNaslov {
+    margin: 8px;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.divPrijavaUsername, .divPrijavaPassword, .divRegistracijaPol, .divRegistracijaDatum{
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divRegistracijaUsername, .divRegistracijaEmail, .divRegistracijaPassword, .divRegistracijaPasswordProvera, .divRegistracijaIme,
+.divRegistracijaPrezime, .divRegistracijaGrad, .divRegistracijaDrzava, .divRegistracijaZanimanje, .divRegistracijaBiografija {
+    display: flex;
+    margin: 7px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divRegistracijaBiografija, .divRegistracijaZanimanje{
+    padding-right: 3%;
+}
+
+.divRegistracijaDole{
+    margin: 5px;
+}
+
+.divRegistracijaTrenerKlijent{
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    flex-direction: row;
+}
+
+
+.divRegistracijaKlijent{
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    padding-left: 8px;
+}
+
+.divRegistracijaTrener{
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    padding-right: 8px;
+
+}
+
+button{
+    width: 100%;
+    background-color: rgb(80, 78, 78);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    padding: 7px 7px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btnPrijava{
+    border-radius: 5px;
+    margin: 7px 0px 10px 0px;
+    
+    background-color: #010b33b0;
+    box-shadow: 0 4px #051b56b0;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    
+}
+
+.btnPrijava:hover, .btnRegistracija:hover{
+    transform: translateY(2px);
+}
+
+.btnPrijava:active, .btnRegistracija:active {
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.btnRegistracija{
+    width: 85%;
+    margin: 12px 12px 12px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px #7e7575;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding:  4px 2px;
+    margin: 3px 0;
+    /* display: grid; */
+    border: 3px solid rgb(204, 204, 204);
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center; 
+    background-color: rgb(153, 153, 153);
+    width:max-content;
+  }
+
+  .inputPrijavaUsername, .inputPrijavaPassword{
+    width: 80%;
+  }
+
